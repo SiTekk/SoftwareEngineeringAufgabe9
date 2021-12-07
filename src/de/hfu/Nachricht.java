@@ -1,5 +1,7 @@
 package de.hfu;
 
+import java.time.LocalDateTime;
+
 public class Nachricht {
 
     private Sender sender;
