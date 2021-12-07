@@ -10,4 +10,11 @@ public class Nachricht {
     private String titel;
     private String inhalt;
 
+    public Nachricht(Sender sender, Nachrichtentyp nachrichtentyp, String titel, String inhalt)
+    {
+        this.sender = sender;
+        this.nachrichtentyp = nachrichtentyp;
+        this.titel = titel;
+        this.inhalt = inhalt;
+    }
 }
