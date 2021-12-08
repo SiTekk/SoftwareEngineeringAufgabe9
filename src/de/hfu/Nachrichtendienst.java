@@ -11,8 +11,13 @@ public class Nachrichtendienst {
      * @param benutzername
      */
     public void send(Nachricht nachricht, String benutzername) {
-        // TODO - implement Nachrichtendienst.send
-        throw new UnsupportedOperationException();
+        for (Empfaenger e : angemeldeteEmpfaenger) {
+            if (e.getBenutzername().equals(benutzername)) {
+                e.empfangen(nachricht);
+                return;
+            }
+        }
+        System.out.println("Kein Empfänger mit Benutzername: " + benutzername + " angemeldet!");
 
     }
 

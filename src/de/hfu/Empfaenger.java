@@ -7,19 +7,19 @@ public class Empfaenger {
     private List<Nachricht> empfangeneNachrichten;
     private String benutzername;
 
-    public Empfaenger(String benutzername)
-    {
+    public Empfaenger(String benutzername) {
         empfangeneNachrichten = new ArrayList<>();
         this.benutzername = benutzername;
     }
 
     /**
-     *
      * @param nachricht
      */
     public void empfangen(Nachricht nachricht) {
-        // TODO - implement Empfaenger.empfangen
-        throw new UnsupportedOperationException();
+        empfangeneNachrichten.add(nachricht);
     }
 
+    public String getBenutzername() {
+        return benutzername;
+    }
 }
