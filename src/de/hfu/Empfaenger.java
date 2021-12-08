@@ -13,7 +13,7 @@ public class Empfaenger {
     }
 
     /**
-     * @param nachricht
+     * @param nachricht zu empfangene Nachricht
      */
     public void empfangen(Nachricht nachricht) {
         empfangeneNachrichten.add(nachricht);

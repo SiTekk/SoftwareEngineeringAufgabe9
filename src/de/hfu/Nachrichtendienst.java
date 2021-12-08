@@ -7,8 +7,8 @@ public class Nachrichtendienst {
     private List<Empfaenger> angemeldeteEmpfaenger = new ArrayList<>();
 
     /**
-     * @param nachricht
-     * @param benutzername
+     * @param nachricht    Zu sendende Nachricht
+     * @param benutzername Gewünschter Empfänger
      */
     public void send(Nachricht nachricht, String benutzername) {
         for (Empfaenger e : angemeldeteEmpfaenger) {
@@ -22,7 +22,7 @@ public class Nachrichtendienst {
     }
 
     /**
-     * @param nachricht
+     * @param nachricht Zu sendende Nachricht
      */
     public void send(Nachricht nachricht) {
         for (Empfaenger empfaenger : angemeldeteEmpfaenger) {
@@ -31,14 +31,14 @@ public class Nachrichtendienst {
     }
 
     /**
-     * @param empfaenger
+     * @param empfaenger Anzumeldender Benutzer
      */
     public void anmelden(Empfaenger empfaenger) {
         angemeldeteEmpfaenger.add(empfaenger);
     }
 
     /**
-     * @param empfaenger
+     * @param empfaenger Abzumeldender Benutzer
      */
     public void abmelden(Empfaenger empfaenger) {
         angemeldeteEmpfaenger.remove(empfaenger);
